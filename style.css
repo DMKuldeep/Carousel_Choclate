@@ -1,0 +1,203 @@
+:root {
+  --white: #fff;
+  --darkblue: #1b4965;
+  --lightblue: #edf2f4;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+section.section-two {
+  padding: 80px;
+}
+.slick-slider .element {
+  height: 500px;
+  width: 100px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin: 0px 10px;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left;
+  font-size: 20px;
+  margin: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.slick-slider .slick-disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+.slide-inner {
+  max-width: 900px;
+  margin-left: 120px;
+}
+button.slick-prev,
+button.slick-next {
+  position: absolute;
+  top: 50%;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  border: 0px;
+  cursor: pointer;
+}
+button.slick-next {
+  right: 40px;
+}
+button.slick-prev {
+  left: 40px;
+}
+/* button */
+
+/* method 2 -> use background-clip to support border-radius */
+.btn-gradient-2 {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+  border-radius: 50em;
+  border: 1px solid transparent;
+}
+
+/* demo stuff */
+
+.btn-gradient-2 {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  color: darkblue;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.card {
+  position: relative;
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  border: 0;
+}
+
+.content {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+}
+.inner-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.inner-content .button {
+  background-color: #6c757d;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  .slide-inner {
+    max-width: 600px;
+    margin-left: 120px;
+  }
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  button.slick-next {
+    right: 20px;
+  }
+  button.slick-prev {
+    left: 20px;
+  }
+  .slide-inner {
+    max-width: 300px;
+    margin-left: 80px;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+#error-message {
+  color: red;
+}
+
+/* table */
+.table-container {
+  /* max-width: 1000px; */
+  padding: 80px;
+  padding-top: 0px;
+  margin: 0 auto;
+}
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: var(--darkblue);
+  border-radius: 40px;
+}
+
+.table-wrapper::::-webkit-scrollbar-track {
+  background: var(--white);
+  border-radius: 40px;
+}
+
+.table-wrapper table {
+  margin: 0px 0 20px;
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+
+.table-wrapper table th,
+.table-wrapper table td {
+  padding: 10px;
+  min-width: 75px;
+}
+
+.table-wrapper table th {
+  color: var(--white);
+  background: var(--darkblue);
+}
+
+.table-wrapper table tbody tr:nth-of-type(even) > * {
+  background: var(--lightblue);
+}
+
+.table-wrapper table td:first-child {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.table-credits {
+  font-size: 12px;
+  margin-top: 10px;
+}
