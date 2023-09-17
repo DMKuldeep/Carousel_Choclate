@@ -6,6 +6,5 @@ $(".slick-slider").slick({
   autoplaySpeed: 1000,
   prevArrow: '<button type="button" class="slick-prev"><</button>',
   nextArrow: '<button type="button" class="slick-next">></button>',
-  // dots: false, Boolean
-  // arrows: false, Boolean
+  
 });

@@ -132,7 +132,7 @@ function totalAmount(TotalAmmount) {
   }
 }
 function addButtonClick(product, key) {
-  // Replace this with your desired functionality
+  
   console.log("product", product);
   if (carts && carts.length <= 7) {
     carts.push({ ...product, uniqueId: key });
