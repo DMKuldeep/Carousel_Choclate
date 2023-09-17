@@ -111,6 +111,7 @@ button.slick-prev {
   color: #fff;
   padding: 4px 8px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
